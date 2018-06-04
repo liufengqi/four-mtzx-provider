@@ -1,6 +1,9 @@
 package com.four.entity;
 
-public class Officelevel {
+import java.io.Serializable;
+
+public class Officelevel implements Serializable{
+    private static final long serialVersionUID = 6551786590068288503L;
     //写字楼级别
     private Integer id;
     private String name;

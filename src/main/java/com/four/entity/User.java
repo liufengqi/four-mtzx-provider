@@ -5,12 +5,14 @@ import java.io.Serializable;
 public class User implements Serializable {
 
     private static final long serialVersionUID = -3499674730034121183L;
-
     private Integer userid;
     private String username;
     private String userpass;
+    private String name;
+    private Integer zt;
     private String userphone;
     private String yanzhengma;
+
 
     public Integer getUserid() {
         return userid;
@@ -36,6 +38,22 @@ public class User implements Serializable {
         this.userpass = userpass;
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public Integer getZt() {
+        return zt;
+    }
+
+    public void setZt(Integer zt) {
+        this.zt = zt;
+    }
+
     public String getUserphone() {
         return userphone;
     }
@@ -58,6 +76,8 @@ public class User implements Serializable {
                 "userid=" + userid +
                 ", username='" + username + '\'' +
                 ", userpass='" + userpass + '\'' +
+                ", name='" + name + '\'' +
+                ", zt=" + zt +
                 ", userphone='" + userphone + '\'' +
                 ", yanzhengma='" + yanzhengma + '\'' +
                 '}';

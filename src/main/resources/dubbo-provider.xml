@@ -18,8 +18,8 @@
     <dubbo:protocol name="dubbo" port="-1"/>
     <!-- 声明需要暴露的服务接口 -->
     <!-- 和本地bean一样实现服务 -->
-    <dubbo:service interface="com.four.service.ZxhService" ref="zxhservice"/>
-    <bean id="zxhservice" class="com.four.service.Impl.ZxhServiceImpl"/>
+    <dubbo:service interface="com.four.service.ZxhTwoService" ref="zxhService"/>
+    <bean id="zxhService" class="com.four.service.Impl.ZxhTwoServiceImpl"/>
 
    <dubbo:service interface="com.four.service.GbyService" ref="gbyService"/>
     <bean id="gbyService" class="com.four.service.Impl.GbyServiceImpl"/>

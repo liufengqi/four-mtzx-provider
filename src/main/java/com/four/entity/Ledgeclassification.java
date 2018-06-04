@@ -1,6 +1,8 @@
 package com.four.entity;
 
-public class Ledgeclassification {
+import java.io.Serializable;
+
+public class Ledgeclassification implements Serializable{
     //知识分类
     private Integer id;
     private String name;

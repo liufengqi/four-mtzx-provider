@@ -79,4 +79,19 @@ public class Area implements Serializable{
     public void setHotstatus(Integer hotstatus) {
         this.hotstatus = hotstatus;
     }
+
+
+    @Override
+    public String toString() {
+        return "Area{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", pid='" + pid + '\'' +
+                ", xuhao='" + xuhao + '\'' +
+                ", createdate='" + createdate + '\'' +
+                ", shouzimu='" + shouzimu + '\'' +
+                ", zuobiao='" + zuobiao + '\'' +
+                ", hotstatus=" + hotstatus +
+                '}';
+    }
 }

@@ -1,6 +1,9 @@
 package com.four.entity;
 
-public class Pavenmenttype {
+import java.io.Serializable;
+
+public class Pavenmenttype implements Serializable{
+    private static final long serialVersionUID = 5366445949399844072L;
     //铺面类型
     private Integer id;
     private String name;

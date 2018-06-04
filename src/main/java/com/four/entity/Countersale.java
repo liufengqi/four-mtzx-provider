@@ -1,6 +1,9 @@
 package com.four.entity;
 
-public class Countersale {
+import java.io.Serializable;
+
+public class Countersale implements Serializable{
+    private static final long serialVersionUID = -1435233284160627198L;
     private Integer id;
     private String name;
     private Integer leid;

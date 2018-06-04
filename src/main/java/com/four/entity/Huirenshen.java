@@ -12,6 +12,90 @@ public class Huirenshen implements Serializable  {
     private String huirenshensfzh;
     private String huirenshenimgzhng;
     private String huirenshenimgfan;
+    private String huirenying;
+    private String huirenshen;
+    private String huirenming;
+    private String huirennumber;
+    private String huirenphoto;
+    private String huirenjjyy;
+    private String huibeiju;
+
+    @Override
+    public String toString() {
+        return "Huirenshen{" +
+                "huirenshenid=" + huirenshenid +
+                ", huirenshenstruts='" + huirenshenstruts + '\'' +
+                ", huirenshenzh='" + huirenshenzh + '\'' +
+                ", huirenshensfz='" + huirenshensfz + '\'' +
+                ", huirenshenname='" + huirenshenname + '\'' +
+                ", huirenshensfzh='" + huirenshensfzh + '\'' +
+                ", huirenshenimgzhng='" + huirenshenimgzhng + '\'' +
+                ", huirenshenimgfan='" + huirenshenimgfan + '\'' +
+                ", huirenying='" + huirenying + '\'' +
+                ", huirenshen='" + huirenshen + '\'' +
+                ", huirenming='" + huirenming + '\'' +
+                ", huirennumber='" + huirennumber + '\'' +
+                ", huirenphoto='" + huirenphoto + '\'' +
+                ", huirenjjyy='" + huirenjjyy + '\'' +
+                ", huibeiju='" + huibeiju + '\'' +
+                '}';
+    }
+
+    public String getHuirenjjyy() {
+        return huirenjjyy;
+    }
+
+    public void setHuirenjjyy(String huirenjjyy) {
+        this.huirenjjyy = huirenjjyy;
+    }
+
+    public String getHuibeiju() {
+        return huibeiju;
+    }
+
+    public void setHuibeiju(String huibeiju) {
+        this.huibeiju = huibeiju;
+    }
+
+    public String getHuirenying() {
+        return huirenying;
+    }
+
+    public void setHuirenying(String huirenying) {
+        this.huirenying = huirenying;
+    }
+
+    public String getHuirenshen() {
+        return huirenshen;
+    }
+
+    public void setHuirenshen(String huirenshen) {
+        this.huirenshen = huirenshen;
+    }
+
+    public String getHuirenming() {
+        return huirenming;
+    }
+
+    public void setHuirenming(String huirenming) {
+        this.huirenming = huirenming;
+    }
+
+    public String getHuirennumber() {
+        return huirennumber;
+    }
+
+    public void setHuirennumber(String huirennumber) {
+        this.huirennumber = huirennumber;
+    }
+
+    public String getHuirenphoto() {
+        return huirenphoto;
+    }
+
+    public void setHuirenphoto(String huirenphoto) {
+        this.huirenphoto = huirenphoto;
+    }
 
     public Integer getHuirenshenid() {
         return huirenshenid;
@@ -78,17 +162,4 @@ public class Huirenshen implements Serializable  {
     }
 
 
-    @Override
-    public String toString() {
-        return "Huirenshen{" +
-                "huirenshenid=" + huirenshenid +
-                ", huirenshenstruts='" + huirenshenstruts + '\'' +
-                ", huirenshenzh='" + huirenshenzh + '\'' +
-                ", huirenshensfz='" + huirenshensfz + '\'' +
-                ", huirenshenname='" + huirenshenname + '\'' +
-                ", huirenshensfzh='" + huirenshensfzh + '\'' +
-                ", huirenshenimgzhng='" + huirenshenimgzhng + '\'' +
-                ", huirenshenimgfan='" + huirenshenimgfan + '\'' +
-                '}';
-    }
 }

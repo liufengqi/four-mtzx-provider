@@ -8,11 +8,13 @@ public class Huijin implements Serializable {
     //会员管理金钱管理
     private Integer huijinid;
     private String huijinzhanghao;
-    private String huijinkymoney;
+    private Integer huijinkymoney;
     private String huijinshuiming;
-    private String huijinmoneysl;
+    private Integer huijinmoneysl;
     private String huijindate;
     private String huijinip;
+
+    private String huijizhanghao;
 
     public Integer getHuijinid() {
         return huijinid;
@@ -30,11 +32,11 @@ public class Huijin implements Serializable {
         this.huijinzhanghao = huijinzhanghao;
     }
 
-    public String getHuijinkymoney() {
+    public Integer getHuijinkymoney() {
         return huijinkymoney;
     }
 
-    public void setHuijinkymoney(String huijinkymoney) {
+    public void setHuijinkymoney(Integer huijinkymoney) {
         this.huijinkymoney = huijinkymoney;
     }
 
@@ -46,11 +48,11 @@ public class Huijin implements Serializable {
         this.huijinshuiming = huijinshuiming;
     }
 
-    public String getHuijinmoneysl() {
+    public Integer getHuijinmoneysl() {
         return huijinmoneysl;
     }
 
-    public void setHuijinmoneysl(String huijinmoneysl) {
+    public void setHuijinmoneysl(Integer huijinmoneysl) {
         this.huijinmoneysl = huijinmoneysl;
     }
 
@@ -70,17 +72,25 @@ public class Huijin implements Serializable {
         this.huijinip = huijinip;
     }
 
+    public String getHuijizhanghao() {
+        return huijizhanghao;
+    }
+
+    public void setHuijizhanghao(String huijizhanghao) {
+        this.huijizhanghao = huijizhanghao;
+    }
 
     @Override
     public String toString() {
         return "Huijin{" +
                 "huijinid=" + huijinid +
                 ", huijinzhanghao='" + huijinzhanghao + '\'' +
-                ", huijinkymoney='" + huijinkymoney + '\'' +
+                ", huijinkymoney=" + huijinkymoney +
                 ", huijinshuiming='" + huijinshuiming + '\'' +
-                ", huijinmoneysl='" + huijinmoneysl + '\'' +
+                ", huijinmoneysl=" + huijinmoneysl +
                 ", huijindate='" + huijindate + '\'' +
                 ", huijinip='" + huijinip + '\'' +
+                ", huijizhanghao='" + huijizhanghao + '\'' +
                 '}';
     }
 }

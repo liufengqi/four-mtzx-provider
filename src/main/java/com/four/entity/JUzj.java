@@ -3,7 +3,7 @@ package com.four.entity;
 import java.io.Serializable;
 
 public class JUzj implements Serializable{
-    private static final long serialVersionUID = 2202185952503178713L;
+    private static final long serialVersionUID = 2202125952503178713L;
     private  Integer id;
     private  Integer userid;
     private  Integer qid;

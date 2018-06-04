@@ -1,6 +1,9 @@
 package com.four.entity;
 
-public class Officetype {
+import java.io.Serializable;
+
+public class Officetype implements Serializable{
+    private static final long serialVersionUID = -2731263921368155460L;
     //写字楼类型
     private Integer id;
     private String name;

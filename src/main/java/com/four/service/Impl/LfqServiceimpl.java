@@ -2,6 +2,7 @@ package com.four.service.Impl;
 
 import com.four.dao.LfqDao;
 import com.four.entity.User;
+import com.four.mysqlzc.ReadOnlyConnection;
 import com.four.service.LfqService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.context.request.RequestContextHolder;
@@ -11,14 +12,10 @@ import javax.servlet.http.HttpServletRequest;
 import java.util.List;
 public class LfqServiceimpl implements LfqService{
 
-
-
     @Autowired
     private LfqDao lfqDao;
 
-/*    @Autowired
-    HttpServletRequest request; //这里可以获取到request*/
-
+    @ReadOnlyConnection
     @Override
     public String fasongyzm(String phone) {
         return lfqDao.fasongyzm(phone);
@@ -29,6 +26,7 @@ public class LfqServiceimpl implements LfqService{
         lfqDao.zhuceuser(user);
     }
 
+    @ReadOnlyConnection
     @Override
     public String querydengluuser(User user) {
 
@@ -38,7 +36,6 @@ public class LfqServiceimpl implements LfqService{
               User aa =  list.get(0);
                 if(aa.getUserpass().equals(user.getUserpass())){
                     System.err.println(list+"-------list");
-               /*    request.getSession().setAttribute("user",list);*/
                     //成功
                     foul = "success"+","+aa.getUsername();
                 }else{

@@ -1,8 +1,11 @@
 package com.four.entity;
 
-public class Huiguan {
+import java.io.Serializable;
 
-   //会员管理管理员操作
+public class Huiguan implements Serializable{
+
+    private static final long serialVersionUID = 932627573287122123L;
+    //会员管理管理员操作
     private Integer huiguanid;
     private String huiguanquanxian;
     private String huiguandengji;
