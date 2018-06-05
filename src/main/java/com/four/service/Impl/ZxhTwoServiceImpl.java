@@ -20,7 +20,7 @@ public class ZxhTwoServiceImpl implements ZxhTwoService {
 
     @Override
     public String insertZhaoFang(t_zhaofang zhao) {
-        System.err.println(zhao);
+        System.err.println("cccccccccccccccccccccccccccccccccccccccccccc");
         SimpleDateFormat sim = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         zhao.setFabutime(sim.format(new Date()));
         System.err.println("zxczxczxczxczxczxczxczxc"+zhao);
